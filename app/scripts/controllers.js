@@ -5,7 +5,7 @@ angular.module('confusionApp')
   $scope.filtText = "";
   $scope.showDetails = false;
 
-  $scope.dishes = menuFactory.getDishes();
+  $scope.dishes =   menuFactory.getDishes();
 
 $scope.select = function (setTab) {
  $scope.tab = setTab;
@@ -27,6 +27,10 @@ $scope.isSelected = function (checkTab) {
 $scope.toggleDetails = function() {
   $scope.showDetails = !$scope.showDetails;
 };
+}])
+
+.controller('IndexController', ['$scope', function ($scope) {
+
 }])
 
 .controller('ContactController', ['$scope', function($scope) {
@@ -63,9 +67,9 @@ $scope.toggleDetails = function() {
   };
 }])
 
-.controller('DishDetailController', ['$scope', '$routeParams', 'menuFactory', function($scope, $routeParams, menuFactory) {
+.controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
 
-  var dish = menuFactory.getDish(parseInt($routeParams.id, 10 ));
+  var dish = menuFactory.getDish(parseInt($stateParams.id, 10 ));
   $scope.dish = dish;
 
 }])
