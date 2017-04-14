@@ -22,10 +22,34 @@ You need Node JS and npm in order to work with this project.
 
    ```bower install```
 
-4. That's it. You're done. Explore the project.
+4. Install json-server globally by typing following command:
+   ``` npm install json-server -g``` You might need to prefix ```sudo``` if you are using Mac or Linux.
+
+5. Go to json-server folder and type
+   ```json-server --watch db.json```
+
+6. Open http://localhost:3000
+
 
 ---
 ## Development instructions:
+
+   For server implmentation, I am using Node module called JSON-server.
+
+   Install JSON server globally using ```npm install json-server -g```
+
+   Bear in mind that you might need to use ```sudo``` if you are using Linux or Mac.
+
+   Create a "json-server" folder and copy "db.json" file.
+
+   Create a folder named "public" inside "json-server" folder.
+
+   I've copied all the files from generated "dist" folder into "public" folder inside "json-server".
+   
+   Go to json-server folder and type in command:
+   ```json-server --watch db.json```
+
+   Open http://localhost:3000
 
    You can serve the peoject using ```gulp watch``` command.
 
