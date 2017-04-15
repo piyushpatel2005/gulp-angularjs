@@ -28,7 +28,9 @@ You need Node JS and npm in order to work with this project.
 5. Go to json-server folder and type
    ```json-server --watch db.json```
 
-6. Open http://localhost:3000
+6. To run the project on local machine, you need to install devDependencies which includes simple server, type ```npm install``` and then to serve the application type ```gulp watch```.
+
+7. A new browser windows opens with location http://localhost:3001.
 
 
 ---
@@ -51,7 +53,7 @@ You need Node JS and npm in order to work with this project.
 
    Open http://localhost:3000
 
-   You can serve the peoject using ```gulp watch``` command.
+   You also need to install devDependencies using ```npm install``` and then you can serve the project using ```gulp watch``` command.
 
    If you get an error or see a message 'Cannot GET/', refresh the page.
 
