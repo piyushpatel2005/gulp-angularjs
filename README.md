@@ -61,6 +61,8 @@ You need Node JS and npm in order to work with this project.
 
    Set up ngMock using ```bower install angular-mocks -S```
 
+   To run unit tests, write ```karma start karma.conf.js```. You should see "TOTAL: 12 SUCCESS" message.
+
    For End to End testing, first install protractor using
 
    ```npm install protractor -g```. Use ```sudo``` for Mac or Linux.
