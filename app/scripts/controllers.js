@@ -127,7 +127,7 @@ angular.module('confusionApp')
           $scope.showPromotion = false;
           $scope.messagePromotion = "Loading...";
 
-          menuFactory.getPromotions().get({id: 0})
+          menuFactory.getPromotion().get({id: 0})
             .$promise.then(function(response) {
               $scope.promotion = response;
               $scope.showPromotion = true;
