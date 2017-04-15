@@ -60,3 +60,17 @@ You need Node JS and npm in order to work with this project.
    Install "karma-cli" globally using ```npm install karma-cli -g```
 
    Set up ngMock using ```bower install angular-mocks -S```
+
+   For End to End testing, first install protractor using
+
+   ```npm install protractor -g```. Use ```sudo``` for Mac or Linux.
+
+   Update webdriver-manager using ```webdriver-manager update```.
+
+   Again, make sure to use ```sudo``` if you are using Mac or Linux as it is installed globally.
+
+   Now, ensure that you are running json-server by typing in the command ```json-server --watch db.json``` in the json-server folder.
+
+   Use another terminal window and ensure that the application is running by typing ```gulp watch``` in the application folder. Please, ensure that the application is running on port 3001, as that configuration is used in "protractor.conf.js" file.
+
+   Open third terminal window and go to test directory and type in the command ```protractor protractor.conf.js``` to run tests. Your browser window might open momentarily and navigate to different routes to test your application. You will see a  message showing "5 specs, 0 failures".
