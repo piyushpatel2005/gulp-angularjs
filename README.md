@@ -45,7 +45,7 @@ You need Node JS and npm in order to work with this project.
    Create a folder named "public" inside "json-server" folder.
 
    I've copied all the files from generated "dist" folder into "public" folder inside "json-server".
-   
+
    Go to json-server folder and type in command:
    ```json-server --watch db.json```
 
@@ -54,3 +54,9 @@ You need Node JS and npm in order to work with this project.
    You can serve the peoject using ```gulp watch``` command.
 
    If you get an error or see a message 'Cannot GET/', refresh the page.
+
+## TDD with Unit Tests and End to End tests
+
+   Install "karma-cli" globally using ```npm install karma-cli -g```
+
+   Set up ngMock using ```bower install angular-mocks -S```
